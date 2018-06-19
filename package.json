@@ -1,0 +1,25 @@
+{
+  "name": "circleci-hello-world-nodejs",
+  "version": "1.0.0",
+  "description": "hello world example app for our Circle-CI tutorial: https://github.com/dwyl/learn-circleci",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nelsonic/circleci-hello-world-nodejs.git"
+  },
+  "keywords": [
+    "circle-ci",
+    "continuous",
+    "integration",
+    "tutorial"
+  ],
+  "author": "pollymath",
+  "license": "GPL-2.0",
+  "bugs": {
+    "url": "https://github.com/nelsonic/circleci-hello-world-nodejs/issues"
+  },
+  "homepage": "https://github.com/nelsonic/circleci-hello-world-nodejs#readme"
+}
