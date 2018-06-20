@@ -14,3 +14,6 @@ if [ $B == "master" ]; then
 elif [ $ISSUE > 0 ]; then
   echo "circleci-demo-app"
 fi
+
+# temprary "hack" for app name:
+echo "circleci-demo-app"
