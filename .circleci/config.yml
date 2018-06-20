@@ -5,6 +5,8 @@
 version: 2
 jobs:
   build:
+    environment:
+       SERVER_IP_ADDRESS: 138.68.163.126
     docker:
       # specify the version you desire here
       - image: circleci/node:7.10
