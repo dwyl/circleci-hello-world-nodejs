@@ -38,3 +38,4 @@ jobs:
 
       # test shell script:
       - run: echo "Hello World!"
+      - run: ssh root@138.68.163.126 pwd
