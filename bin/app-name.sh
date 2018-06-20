@@ -1,16 +1,11 @@
 #!/bin/bash
-# This Bash Script has/does One Job: Return the GitHub Issue Number of the Active Branch.
-# [ $TRAVIS_PULL_REQUEST_BRANCH ] && B=$TRAVIS_PULL_REQUEST_BRANCH || B=$(git rev-parse --abbrev-ref HEAD)
+# This Bash Script has/does One Job: Return the Git Branch Name minus the Issue Number of the Active Branch.
 CWD="$PWD/bin"
 B=$(sh $CWD/branch.sh)
-echo "B => $B"
-echo "IFS => $IFS"
+# echo "B => $B"
+# echo "IFS => $IFS"
+# remove any # (hash symbol) from branch name.
 IFS=# read BRANCH ISSUE <<< "$B";
-echo "issue >> $ISSUE";
-echo "name >> $BRANCH";
-ISSUE=$(($ISSUE + 0)) # typecast to int
-if [ $B == "master" ]; then
-  echo "hello-world-node"
-elif [ $ISSUE > 0 ]; then
-  echo "circleci-demo-app"
-fi
+# echo "issue >> $ISSUE";
+# echo "name >> $BRANCH";
+echo $BRANCH
