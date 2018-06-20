@@ -39,5 +39,5 @@ jobs:
       - run: yarn test
 
       # test shell script:
-      - run: echo "Hello World!"
-      - run: ssh root@138.68.163.126 pwd
+      - run: echo ${SERVER_IP_ADDRESS}
+      # - run: ssh root@138.68.163.126 pwd
