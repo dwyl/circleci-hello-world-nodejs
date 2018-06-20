@@ -41,9 +41,8 @@ jobs:
       - run: yarn test
 
       # Use BASH instead of DASH! see: https://ubuntuforums.org/showthread.php?t=1932504
-      - run: ls -al /bin/sh && sudo rm /bin/sh && sudo ln -s /bin/bash /bin/sh && ls -al /bin/sh
-      # test shell script:
+      - run: ls -al /bin/sh && rm /bin/sh && ln -s /bin/bash /bin/sh && ls -al /bin/sh
       - run: echo ${SERVER_IP_ADDRESS}
       - run: echo -e "Host $SERVER_IP_ADDRESS\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
-      # - run: sh bin/app-name.sh
+      # DEPLOY "Staging" App:
       - run: sh bin/deploy.sh
