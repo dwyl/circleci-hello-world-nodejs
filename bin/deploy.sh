@@ -3,7 +3,7 @@ CWD="$PWD/bin"
 echo "CWD $CWD"
 BRANCH=$(sh $CWD/branch.sh)
 echo "BRANCH=> $BRANCH"
-DOKKU_APP=$(sh $CWD/app-name.sh)
+# DOKKU_APP=$(sh $CWD/app-name.sh)
 echo "DOKKU_APP=> $DOKKU_APP"
 
 # these could all be environment variables:
