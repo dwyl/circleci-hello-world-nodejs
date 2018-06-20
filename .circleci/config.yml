@@ -45,4 +45,5 @@ jobs:
       # test shell script:
       - run: echo ${SERVER_IP_ADDRESS}
       - run: echo -e "Host $SERVER_IP_ADDRESS\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
-      - run: sh bin/deploy.sh
+      - run: sh bin/app-name.sh
+      # - run: sh bin/deploy.sh
