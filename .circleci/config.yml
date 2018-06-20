@@ -3,10 +3,10 @@
 # Check https://circleci.com/docs/2.0/language-javascript/ for more details
 #
 version: 2
+environment:
+   SERVER_IP_ADDRESS: 138.68.163.126
 jobs:
   build:
-    environment:
-       SERVER_IP_ADDRESS: 138.68.163.126
     docker:
       # specify the version you desire here
       - image: circleci/node:7.10
