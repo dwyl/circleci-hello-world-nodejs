@@ -4,9 +4,9 @@
 #
 version: 2
 jobs:
-  environment:
-     SERVER_IP_ADDRESS: 138.68.163.126
   build:
+    environment:
+       SERVER_IP_ADDRESS: 138.68.163.126
     docker:
       # specify the version you desire here
       - image: circleci/node:7.10
@@ -40,4 +40,5 @@ jobs:
 
       # test shell script:
       - run: echo ${SERVER_IP_ADDRESS}
-      # - run: ssh root@138.68.163.126 pwd
+      - run: echo -e "Host $SERVER_IP_ADDRESS\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
+      - run: ssh root@138.68.163.126 pwd
