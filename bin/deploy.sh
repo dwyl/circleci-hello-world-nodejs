@@ -28,6 +28,10 @@ if [ "$TRAVIS" == "true" ]; then
 else
     $(git remote set-url $REMOTE)
 fi
+if [ "$TRAVIS" == "false" ]; then
+    $(git remote add $REMOTE)
+fi
+$(git remote -v)
 
 # Temporarily Stop Nginx to avoid the git push / build failing:
 KILL_NGINX="pkill nginx"
