@@ -8,6 +8,7 @@ jobs:
     environment:
        SERVER_IP_ADDRESS: 138.68.163.126
        DOKKU_APP: circlecidemo
+       TRAVIS: "false"
     docker:
       # specify the version you desire here
       - image: circleci/node:7.10

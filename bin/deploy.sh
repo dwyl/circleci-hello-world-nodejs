@@ -19,7 +19,7 @@ $SSH $CREATE
 
 # set git remote for the "review" dokku app:
 REMOTE="dokku dokku@$URL"
-echo "REMOTE $REMOTE"
+echo "REMOTE => $REMOTE"
 if [ "$TRAVIS" == "true" ]; then
     $(git remote add $REMOTE)
     # Travis does a "shallow" git clone so we need to "unshallow" it:
@@ -39,9 +39,9 @@ $SSH $SYSTEMCTL_START_NGINX
 
 # Push *ONLY* the latest commit to dokku (minimalist)
 COMMIT_HASH=$(sh $CWD/commit-hash.sh)
-echo "COMMIT_HASH=> $COMMIT_HASH"
+echo "COMMIT_HASH => $COMMIT_HASH"
 PUSH="git push dokku $COMMIT_HASH:refs/heads/master" # this should work *everywhere*
-echo "PUSH $PUSH"
+echo "PUSH => $PUSH"
 $($PUSH)
 
 # Apply the Letsencrypt Wildcard SSL/TLS Certificate to the app
