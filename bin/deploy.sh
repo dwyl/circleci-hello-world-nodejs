@@ -31,7 +31,7 @@ fi
 if [ "$TRAVIS" == "false" ]; then
     $(git remote add $REMOTE)
 fi
-$(git remote -v)
+echo "$(git remote -v)"
 
 # Temporarily Stop Nginx to avoid the git push / build failing:
 KILL_NGINX="pkill nginx"
