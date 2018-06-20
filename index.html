@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="https://dwyl.com/img/favicon.ico"/>
+    <title>{hello}</title>
+  </head>
+  <body>
+    <h1>{hello}</h1>
+    <p>Git Hash: <a href="https://github.com/nelsonic/circleci-hello-world-nodejs/tree/{GIT_COMMIT_HASH}">{GIT_COMMIT_HASH}</a></p>
+    <style>
+      h1 {
+        color: #0099CC;
+        border: 3px #0099CC solid;
+        font-size: 2em;
+        padding: 0.5em;
+        margin: 1em;
+        text-align: center;
+        font-family: sans-serif;
+      }
+      p {
+        font-family: monospace;
+      }
+    </style>
+  </body>
+</html>
