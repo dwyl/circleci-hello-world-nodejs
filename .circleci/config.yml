@@ -41,4 +41,4 @@ jobs:
       # test shell script:
       - run: echo ${SERVER_IP_ADDRESS}
       - run: echo -e "Host $SERVER_IP_ADDRESS\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
-      - run: ssh root@138.68.163.126 pwd
+      - run: sh bin/deploy.sh
