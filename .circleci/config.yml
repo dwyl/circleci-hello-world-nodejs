@@ -42,7 +42,7 @@ jobs:
       - run: yarn test
 
       # Use BASH instead of DASH! see: https://ubuntuforums.org/showthread.php?t=1932504
-      - run: apt-get install -y sudo # https://discuss.circleci.com/t/sudo-command-not-found/14208/4
+      # - run: apt-get install -y sudo # https://discuss.circleci.com/t/sudo-command-not-found/14208/4
       - run: ls -al /bin/sh && sudo rm /bin/sh && sudo ln -s /bin/bash /bin/sh && ls -al /bin/sh
       - run: echo ${SERVER_IP_ADDRESS}
       - run: echo -e "Host $SERVER_IP_ADDRESS\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
