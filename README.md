@@ -2,10 +2,10 @@
 
 <div align="center">
 
-[![CircleCI](https://circleci.com/gh/nelsonic/circleci-hello-world-nodejs.svg?style=svg)](https://circleci.com/gh/nelsonic/circleci-hello-world-nodejs)
+[![CircleCI](https://circleci.com/gh/dwyl/circleci-hello-world-nodejs.svg?style=svg)](https://circleci.com/gh/dwyl/circleci-hello-world-nodejs)
 [![HitCount](http://hits.dwyl.io/nelsonic/circleci-hello-world-nodejs.svg)](https://github.com/nelsonic/circleci-hello-world-nodejs)
-[![Dependency Status](https://img.shields.io/david/nelsonic/circleci-hello-world-nodejs.svg?style=flat-square)](https://david-dm.org/nelsonic/circleci-hello-world-nodejs)
-[![devDependency Status](https://img.shields.io/david/dev/nelsonic/circleci-hello-world-nodejs.svg?style=flat-square)](https://david-dm.org/nelsonic/circleci-hello-world-nodejs#info=devDependencies)
+[![Dependency Status](https://img.shields.io/david/dwyl/circleci-hello-world-nodejs.svg?style=flat-square)](https://david-dm.org/dwyl/circleci-hello-world-nodejs)
+[![devDependency Status](https://img.shields.io/david/dev/dwyl/circleci-hello-world-nodejs.svg?style=flat-square)](https://david-dm.org/dwyl/circleci-hello-world-nodejs#info=devDependencies)
 </div>
 
 <br />
